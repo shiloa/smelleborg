@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://yelp.com/searchBusinessByCategory",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/layout-web-1_1.json",
+            "criteria":{
+                "platform":"web"
+            }
+        }
+    ]
+}

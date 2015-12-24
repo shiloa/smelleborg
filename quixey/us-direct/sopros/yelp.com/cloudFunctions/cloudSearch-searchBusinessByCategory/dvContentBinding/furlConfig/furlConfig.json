@@ -4,9 +4,9 @@
     "default_path":"",
     "other_path":[
         {
-            "path":"../binding/layout-web-1_1.json",
+            "path":"../binding/schemaContentBinding-1_1.json",
             "criteria":{
-                "platform":"web"
+                "platform":"all"
             }
         }
     ]

@@ -1,0 +1,12 @@
+{
+    "schema": "photograph",
+    "schemaContentMap":{
+        "cta": "@resources",
+        "description": "{photograph_description}",
+        "image": "{photograph_image}",
+        "name": "{photograph_name}"
+    },
+    "formatters": {},
+    "resources":{},
+    "uiConfig":{}
+}

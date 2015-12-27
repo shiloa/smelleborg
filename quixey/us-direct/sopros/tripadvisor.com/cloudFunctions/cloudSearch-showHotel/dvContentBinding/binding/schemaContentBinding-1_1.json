@@ -1,0 +1,16 @@
+{
+    "schema": "place",
+    "schemaContentMap":{
+        "address": "{place_address}",
+        "cta": "@resources",
+        "description": "{place_description}",
+        "distance": "{place_distance}",
+        "image": "{place_image}",
+        "name": "{place_name}",
+        "reviewCount": "{place_reviewCount}",
+        "telephone": "{place_telephone}"
+    },
+    "formatters": {},
+    "resources":{},
+    "uiConfig":{}
+}

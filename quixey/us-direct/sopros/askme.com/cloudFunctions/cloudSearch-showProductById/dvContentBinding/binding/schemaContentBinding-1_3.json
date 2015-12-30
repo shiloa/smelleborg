@@ -3,11 +3,10 @@
     "schemaContentMap":{
         "brand": "{product_brand}",
         "cta": "@resources",
-        "description": "{product_description}",
         "image": "{product_image}",
         "name": "{product_name}",
         "price": "{product_price}",
-        "qxyRatingText": "{product_qxyRatingText}"
+        "qxyInfo": "{product_qxyInfo}"
     },
     "formatters": {},
     "resources":{

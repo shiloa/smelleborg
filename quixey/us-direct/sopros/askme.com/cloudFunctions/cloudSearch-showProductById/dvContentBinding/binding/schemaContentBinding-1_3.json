@@ -10,6 +10,14 @@
         "qxyRatingText": "{product_qxyRatingText}"
     },
     "formatters": {},
-    "resources":{},
-    "uiConfig":{}
+    "resources":{
+        "en_US": {
+            "cta": "Buy Now"
+        }
+    },
+    "uiConfig":{
+        "appColor": "#000000",
+        "imageWidth": 328,
+        "imageHeight": 124
+    }
 }

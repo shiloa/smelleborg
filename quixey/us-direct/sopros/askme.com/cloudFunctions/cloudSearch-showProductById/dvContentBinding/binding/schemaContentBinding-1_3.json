@@ -17,7 +17,7 @@
     },
     "uiConfig":{
         "appColor": "#000000",
-        "imageWidth": 328,
-        "imageHeight": 124
+        "imageWidth": "328",
+        "imageHeight": "124"
     }
 }

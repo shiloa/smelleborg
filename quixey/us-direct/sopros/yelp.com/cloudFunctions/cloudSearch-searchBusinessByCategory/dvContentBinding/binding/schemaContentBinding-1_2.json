@@ -4,11 +4,11 @@
         "address": "{place_address}",
         "cta": "@resources",
         "description": "{place_description}",
-        "distance": "{place_distance}",
         "image": "{place_image}",
         "name": "{place_name}",
         "qxyAvgRating": "{place_qxyAvgRating}",
         "qxyInfo": "{place_qxyInfo}",
+        "qxyRatingText": "{place_qxyRatingText}",
         "reviewCount": "{place_reviewCount}"
     },
     "formatters": {},

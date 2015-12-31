@@ -4,7 +4,6 @@
         "address": "{place_address}",
         "cta": "@resources",
         "description": "{place_description}",
-        "distance": "{place_distance}",
         "image": "{place_image}",
         "name": "{place_name}",
         "qxyInfo": "{place_qxyInfo}",

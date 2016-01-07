@@ -1,5 +1,5 @@
 {
-    "funcUrlTemplate":"func://askme.com/showProductById",
+    "funcUrlTemplate":"func://askme.com/showProductById2",
     "type":"static",
     "default_path":"",
     "other_path":[

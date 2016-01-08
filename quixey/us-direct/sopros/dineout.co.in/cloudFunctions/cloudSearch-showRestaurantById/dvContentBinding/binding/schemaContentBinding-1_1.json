@@ -1,0 +1,12 @@
+{
+    "schema": "place",
+    "schemaContentMap":{
+        "image": "{place_image}",
+        "name": "{place_name}",
+        "qxyAvgRating": "{place_qxyAvgRating}",
+        "qxyInfo": "{place_qxyInfo}"
+    },
+    "formatters": {},
+    "resources":{},
+    "uiConfig":{}
+}

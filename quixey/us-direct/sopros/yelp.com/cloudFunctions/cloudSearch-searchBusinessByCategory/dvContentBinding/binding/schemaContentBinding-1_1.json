@@ -1,6 +1,6 @@
 {
     "schema": "place",
-    "schemaContentMap":{
+    "schemaContentMap": {
         "address": "{place_address}",
         "cta": "@resources",
         "description": "{place_description}",
@@ -13,6 +13,7 @@
         "reviewCount": "{place_reviewCount}"
     },
     "formatters": {},
-    "resources":{},
+    "resources": {
+    },
     "uiConfig":{}
 }

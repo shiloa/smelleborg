@@ -1,0 +1,13 @@
+{
+    "schema": "creativeWork",
+    "schemaContentMap":{
+        "author": "{creativeWork_author}",
+        "cta": "@resources",
+        "datePublished": "{creativeWork_datePublished}",
+        "image": "{creativeWork_image}",
+        "name": "{creativeWork_name}"
+    },
+    "formatters": {},
+    "resources":{},
+    "uiConfig":{}
+}

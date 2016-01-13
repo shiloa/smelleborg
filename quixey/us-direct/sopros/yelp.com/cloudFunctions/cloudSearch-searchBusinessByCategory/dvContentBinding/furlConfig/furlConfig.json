@@ -4,7 +4,7 @@
     "default_path":"",
     "other_path":[
         {
-            "path":"../binding/schemaContentBinding-1_4.json",
+            "path":"../binding/schemaContentBinding-1_5.json",
             "criteria":{
                 "platform":"all"
             }

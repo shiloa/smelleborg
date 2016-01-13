@@ -1,0 +1,19 @@
+{
+    "schema": "product",
+    "schemaContentMap": {
+        "cta": "@resources",
+        "image": "{product_image}",
+        "name": "@resources",
+        "price": "@resources",
+        "priceCurrency": "{product_priceCurrency}",
+        "reviewCount": "{product_reviewCount}"
+    },
+    "formatters": {},
+    "resources": {
+        "en_US": {
+            "name": "<b><i>{product_name}</i></b>",
+            "price": "<font color=\"#ff0000\">{product_price}</font>"
+        }
+    },
+    "uiConfig":{}
+}

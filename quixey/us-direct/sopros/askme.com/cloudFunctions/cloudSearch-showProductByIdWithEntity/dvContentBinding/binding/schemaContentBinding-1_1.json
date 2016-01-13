@@ -6,9 +6,7 @@
         "description": "{product_description}",
         "image": "{product_image}",
         "name": "{product_name}",
-        "qxyInfo": "{product_qxyInfo}",
-        "qxyPriceText": "{product_qxyPriceText}",
-        "qxyRatingText": "{product_qxyRatingText}"
+        "price": "{product_price}"
     },
     "formatters": {},
     "resources":{},

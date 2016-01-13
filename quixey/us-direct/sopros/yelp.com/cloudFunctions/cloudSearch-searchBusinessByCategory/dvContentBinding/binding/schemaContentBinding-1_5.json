@@ -1,0 +1,28 @@
+{
+    "schema": "place",
+    "schemaContentMap": {
+        "address": "@resources",
+        "description": "@resources",
+        "distance": "{place_distance}",
+        "image": "{place_image}",
+        "name": "@resources",
+        "openingHours": "{place_openingHours}",
+        "qxyAvgRating": "{place_qxyAvgRating}",
+        "qxyInfo": "@resources",
+        "qxyRatingText": "@resources",
+        "reviewCount": "{place_reviewCount}",
+        "telephone": "@resources"
+    },
+    "formatters": {},
+    "resources": {
+        "en_US": {
+            "address": "<font color=\"#0096ff\">{place_address}</font>",
+            "description": "<font color=\"#0096ff\"><u>{place_description}</u></font>",
+            "name": "<font color=\"#ff2f92\"><i><u><b>{place_name}</b></u></i></font>",
+            "qxyInfo": "<font color=\"#73fa79\"><u>{place_qxyInfo}</u></font>",
+            "qxyRatingText": "<font color=\"#ff2600\"><strike><u>{place_qxyRatingText}</u></strike></font>",
+            "telephone": "<font color=\"#531b93\">{place_telephone}</font>"
+        }
+    },
+    "uiConfig":{}
+}

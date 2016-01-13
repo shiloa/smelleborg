@@ -1,0 +1,14 @@
+{
+    "schema": "product",
+    "schemaContentMap":{
+        "brand": "{product_brand}",
+        "cta": "@resources",
+        "image": "{product_image}",
+        "name": "{product_name}",
+        "price": "{product_price}",
+        "qxyInfo": "{product_qxyInfo}"
+    },
+    "formatters": {},
+    "resources":{},
+    "uiConfig":{}
+}

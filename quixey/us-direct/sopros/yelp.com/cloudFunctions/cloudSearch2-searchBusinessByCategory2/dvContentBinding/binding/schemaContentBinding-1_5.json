@@ -1,0 +1,18 @@
+{
+    "schema": "place",
+    "schemaContentMap": {
+        "address": "@resources",
+        "image": "{place_image}",
+        "name": "{place_name}",
+        "qxyAvgRating": "{place_qxyAvgRating}",
+        "qxyInfo": "@resources"
+    },
+    "formatters": {},
+    "resources": {
+        "en_US": {
+            "address": "<font color=\"#011993\"><i><u><b>{place_address}</b></u></i></font>",
+            "qxyInfo": "<font color=\"#ff85ff\"><strike>{place_qxyInfo}</strike></font>"
+        }
+    },
+    "uiConfig":{}
+}

@@ -1,5 +1,5 @@
 {
-    "funcUrlTemplate":"func://askme.com/cloudSearch2-showProductById2-installapp",
+    "funcUrlTemplate":"func://askme.com/showProductById2-installapp",
     "type":"static",
     "default_path":"",
     "other_path":[

@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://viewster.com/showMediaById2",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_1.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

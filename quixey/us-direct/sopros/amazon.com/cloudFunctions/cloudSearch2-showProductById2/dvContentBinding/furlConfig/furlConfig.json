@@ -1,5 +1,5 @@
 {
-    "funcUrlTemplate":"func://amazon.com/cloudSearch2-showProductById2",
+    "funcUrlTemplate":"func://amazon.com/showProductById2",
     "type":"static",
     "default_path":"",
     "other_path":[

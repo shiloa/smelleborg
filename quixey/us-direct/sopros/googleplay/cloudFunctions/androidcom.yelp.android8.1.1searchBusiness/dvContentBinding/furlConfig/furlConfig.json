@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://googleplay/android/com.yelp.android/8.1.1/searchBusiness",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_2.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://askme.com/showProductByIdWithEntity2",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_2.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

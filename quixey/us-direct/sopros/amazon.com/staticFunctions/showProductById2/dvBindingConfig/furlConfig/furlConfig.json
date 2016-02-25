@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://amazon.com/showProductById2",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_2.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

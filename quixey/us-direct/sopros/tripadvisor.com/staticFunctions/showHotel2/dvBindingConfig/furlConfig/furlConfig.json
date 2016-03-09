@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://tripadvisor.com/showHotel2",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_4.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://snapdeal.com/showProductById2/{bla1}/{bla2}",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_3.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

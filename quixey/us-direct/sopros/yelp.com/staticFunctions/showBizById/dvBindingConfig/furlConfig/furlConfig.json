@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://yelp.com/showBizById/{id}",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_2.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

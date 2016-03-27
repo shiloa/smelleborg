@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://eventbrite.com/showEventDetailsById2/{eventId}",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_3.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

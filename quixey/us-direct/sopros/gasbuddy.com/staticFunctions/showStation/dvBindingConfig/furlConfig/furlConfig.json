@@ -1,0 +1,13 @@
+{
+    "funcUrlTemplate":"func://gasbuddy.com/showStation/{stationCode}",
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_1.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

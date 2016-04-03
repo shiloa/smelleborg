@@ -13,15 +13,6 @@ var transform = function(webcloudOutput) {
           }
       };
 
-      
-      var funcParamsCallback = function(url) {
-        try {
-          return { "url": url };
-        } catch (e) {
-          print(e);
-          return {};
-        }
-      };
 
       var results = [];
 
@@ -30,7 +21,7 @@ var transform = function(webcloudOutput) {
         var data = webcloudOutput[i];
         var cloudFunc = "func://amazon.com/cloudSearch2-showProductById2";
 
-        var func = "func://amazon.com/showProductById2";
+        var func = "None";
 
         var doc = parseDocument(data.content);
 
@@ -62,6 +53,7 @@ var transform = function(webcloudOutput) {
         if (typeof(funcParamsCallback) === "function" && typeof(output.webUrl) === "string") {
           output.displayContent = assign(output.displayContent, funcParamsCallback(output.webUrl))
         }
+
 
         results.push({ "function": func, "deepViewContent": output });
       }

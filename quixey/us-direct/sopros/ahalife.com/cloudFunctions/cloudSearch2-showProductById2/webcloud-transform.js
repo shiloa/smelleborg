@@ -19,6 +19,15 @@ var transform = function(webcloudOutput) {
           }
       };
 
+      
+      var funcParamsCallback = function(url) {
+        try {
+          var urlWOqs = url.split('?')[0];       return {         "productId": urlWOqs.split('/product/').pop()       };
+        } catch (e) {
+          print(e);
+          return {};
+        }
+      };
 
       var results = [];
 
@@ -27,7 +36,7 @@ var transform = function(webcloudOutput) {
         var data = webcloudOutput[i];
         var cloudFunc = "func://ahalife.com/cloudSearch2-showProductById2";
 
-        var func = "None";
+        var func = "func://ahalife.com/showProductById2";
 
         var doc = parseDocument(data.content);
 

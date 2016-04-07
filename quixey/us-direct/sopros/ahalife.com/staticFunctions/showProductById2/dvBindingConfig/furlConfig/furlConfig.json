@@ -1,0 +1,14 @@
+{
+    "funcUrlTemplate":"func://ahalife.com/showProductById2/{productId}",
+    "useEntitySchema": true,
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_7.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

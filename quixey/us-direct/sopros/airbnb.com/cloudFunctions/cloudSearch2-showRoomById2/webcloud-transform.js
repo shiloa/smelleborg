@@ -2,10 +2,8 @@ var transform = function(webcloudOutput) {
   var transform = {
     "func://airbnb.com/cloudSearch2-showRoomById2": function(webcloudOutput) {
       
-    
-      
-      var parsers = {
-          "product_reviewCount": function(str) {
+          
+      var parsers = {          "product_reviewCount": function(str) {
             try {
               return str.concat(' reviews')
             } catch(e) {}
@@ -18,7 +16,6 @@ var transform = function(webcloudOutput) {
             return str;
           }
       };
-
 
       var results = [];
 
@@ -39,28 +36,44 @@ var transform = function(webcloudOutput) {
         }
 
         var output = {
-          "displayContent": {          
-          "name": getNodeValue(["//h3[contains(@class, 'h5')]/a[contains(@class, 'text-normal')]"], doc),
-          "product_description": parsers["product_description"](getNodeValue(["//div[contains(@itemprop,'description')]/span/a", ''], doc)) ,
-          "product_image": getNodeValue(["//img[contains(@class, 'img-responsive-height')]"], doc),
-          "product_name": getNodeValue(["//h3[contains(@class, 'h5')]/a[contains(@class, 'text-normal')]"], doc),
-          "product_price": getNodeValue(["//span[contains(@class,'price-amount')]"], doc),
-          "product_priceCurrency": getNodeValue(['//div/sup[1]'], doc),
-          "product_qxyAvgRating": getNodeValue(['//div[@data-lng]/@data-star-rating'], doc),
-          "product_qxyInfo": getNodeValue(['//div/sup[1]', "//span[contains(@class,'price-amount')]"], doc),
-          "product_qxyPriceText": getNodeValue(["//span[contains(@class,'price-amount')]"], doc),
-          "product_reviewCount": parsers["product_reviewCount"](getNodeValue(['//div[@data-review-count]/@data-review-count', ''], doc)) 
-          }
+          "displayContent": {}
         };
+
+        
+        addComputedValue(output.displayContent, "name", ["//h3[contains(@class, 'h5')]/a[contains(@class, 'text-normal')]"], parsers, doc);
+        addComputedValue(output.displayContent, "product_description", ["//div[contains(@itemprop,'description')]/span/a", ''], parsers, doc);
+        addComputedValue(output.displayContent, "product_image", ["//img[contains(@class, 'img-responsive-height')]"], parsers, doc);
+        addComputedValue(output.displayContent, "product_name", ["//h3[contains(@class, 'h5')]/a[contains(@class, 'text-normal')]"], parsers, doc);
+        addComputedValue(output.displayContent, "product_price", ["//span[contains(@class,'price-amount')]"], parsers, doc);
+        addComputedValue(output.displayContent, "product_priceCurrency", ['//div/sup[1]'], parsers, doc);
+        addComputedValue(output.displayContent, "product_qxyAvgRating", ['//div[@data-lng]/@data-star-rating'], parsers, doc);
+        addComputedValue(output.displayContent, "product_qxyInfo", ['//div/sup[1]', "//span[contains(@class,'price-amount')]"], parsers, doc);
+        addComputedValue(output.displayContent, "product_qxyPriceText", ["//span[contains(@class,'price-amount')]"], parsers, doc);
+        addComputedValue(output.displayContent, "product_reviewCount", ['//div[@data-review-count]/@data-review-count', ''], parsers, doc);
+
 
         if (params) {
           output = assign(output, params);
         }
 
         if (typeof(funcParamsCallback) === "function" && typeof(output.webUrl) === "string") {
-          output.displayContent = assign(output.displayContent, funcParamsCallback(output.webUrl))
+          var funcParams = funcParamsCallback(output.webUrl);
+
+          output.displayContent = assign(output.displayContent, {
+            "@id": populateFurl("None", funcParams)
+          });
+
+          output.displayContent = assign(output.displayContent, funcParams)
         }
 
+
+        output.displayContent = assign(output.displayContent, {
+          "@type": "NewsArticle",
+          "crawled": utcNow(),
+          "created": utcNow(),
+          "httpStatusCode": 200,
+          "url": output.webUrl
+        });
         output.entitySchema = "newsarticle";
         output.useEntitySchema = true;
 

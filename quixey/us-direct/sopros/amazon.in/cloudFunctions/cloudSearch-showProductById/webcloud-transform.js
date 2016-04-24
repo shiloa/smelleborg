@@ -2,7 +2,16 @@ var transform = function(webcloudOutput) {
   var transform = {
     "func://amazon.in/cloudSearch-showProductById": function(webcloudOutput) {
       
-          
+        
+      var funcParamsCallback = function(url) {
+        try {
+          {}
+        } catch (e) {
+          print(e);
+          return {};
+        }
+      };
+      
       var parsers = {          "product_brand": function(str) {
             try {
               return str.split("by ")[1]
@@ -30,7 +39,7 @@ var transform = function(webcloudOutput) {
         var data = webcloudOutput[i];
         var cloudFunc = "func://amazon.in/cloudSearch-showProductById";
 
-        var func = "None";
+        var func = "func://amazon.in/showProductById";
 
         var doc = parseDocument(data.content);
 
@@ -65,7 +74,7 @@ var transform = function(webcloudOutput) {
           var funcParams = funcParamsCallback(output.webUrl);
 
           output.displayContent = assign(output.displayContent, {
-            "@id": populateFurl("None", funcParams)
+            "@id": populateFurl("func://amazon.in/showProductById/{url}", funcParams)
           });
 
           output.displayContent = assign(output.displayContent, funcParams)

@@ -19,7 +19,7 @@ var transform = function(webcloudOutput) {
         var data = webcloudOutput[i];
         var cloudFunc = "func://ahalife.com/cloudSearch2-showProductById2-installapp";
 
-        var func = "None";
+        var func = "func://ahalife.com/showProductById2";
 
         var doc = parseDocument(data.content);
 
@@ -50,7 +50,7 @@ var transform = function(webcloudOutput) {
           var funcParams = funcParamsCallback(output.webUrl);
 
           output.displayContent = assign(output.displayContent, {
-            "@id": populateFurl("None", funcParams)
+            "@id": populateFurl("func://ahalife.com/showProductById2/{id}", funcParams)
           });
 
           output.displayContent = assign(output.displayContent, funcParams)

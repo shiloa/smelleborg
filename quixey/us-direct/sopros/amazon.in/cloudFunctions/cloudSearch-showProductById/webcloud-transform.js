@@ -30,6 +30,12 @@ var transform = function(webcloudOutput) {
             } catch(e) {}
             return str;
           },
+          "product_name": function(str) {
+            try {
+              return str + ' 1';
+            } catch(e) {}
+            return str;
+          },
           "expires": function(str) {
             try {
               return (new Date).toISOString().replace(/\.\d+/g, '');

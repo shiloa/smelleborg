@@ -1,0 +1,14 @@
+{
+    "funcUrlTemplate":"func://buzzfeed.com/showArticleById2/{articleUrl}",
+    "useEntitySchema": true,
+    "type":"static",
+    "default_path":"",
+    "other_path":[
+        {
+            "path":"../binding/schemaContentBinding-1_8.json",
+            "criteria":{
+                "platform":"all"
+            }
+        }
+    ]
+}

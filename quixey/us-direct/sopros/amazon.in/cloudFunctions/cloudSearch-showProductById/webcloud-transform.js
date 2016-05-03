@@ -12,7 +12,7 @@ var transform = function(cloudOutput, ttl) {
         var data = cloudOutput[i];
         var cloudFunc = "func://amazon.in/cloudSearch-showProductById";
 
-        var func = "None";
+        var func = "func://amazon.in/showProductById";
 
         var doc = parseDocument(data.content);
 
@@ -46,7 +46,7 @@ var transform = function(cloudOutput, ttl) {
           var funcParams = funcParamsCallback(output.webUrl);
 
           output.displayContent = assign(output.displayContent, {
-            "@id": populateFurl("None", funcParams)
+            "@id": populateFurl("func://amazon.in/showProductById/{url}", funcParams)
           });
 
           output.displayContent = assign(output.displayContent, funcParams)

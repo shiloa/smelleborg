@@ -1,0 +1,7 @@
+{
+    "funcUrlTemplate":"func://overstock.com/showProductById/{productId}",
+    "useEntitySchema": true,
+    "type":"static",
+    "default_path":"",
+    "other_path": []
+}
